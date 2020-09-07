@@ -82,6 +82,8 @@ def execute():
                         help='undefine config sections or options')
     parser.add_argument('--max-cycles', metavar='N', default=None, type=int,
                         help='limit number of fuzz job cycles to %(metavar)s (default: no limit)')
+    parser.add_argument('--validate', metavar='NAME',
+                        help='SUT name to validate isues for or \'all\' to validate issues for all the SUTs (default: None).')
     parser.add_argument('--show-config', action='store_true',
                         help='show complete config')
     parser.add_argument('-l', '--log-level', metavar='LEVEL', default='INFO',
